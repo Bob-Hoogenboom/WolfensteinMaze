@@ -20,10 +20,6 @@ public class CharacterControllerMove : MonoBehaviour
         velocity.y += _gravity * Time.deltaTime;
     }
     
-    public void PlayerShoot(InputAction.CallbackContext context)
-    {
-        Debug.Log("Shoot");
-    }
     
     public void PlayerMove(Vector2 Dir)
     {
