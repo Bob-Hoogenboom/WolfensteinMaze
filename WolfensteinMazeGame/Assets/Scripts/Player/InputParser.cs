@@ -20,6 +20,7 @@ public class InputParser : MonoBehaviour
         _playerControlsActions = _playerInput.Movement;
 
         _playerControlsActions.Shoot.performed += _shoot.PlayerShoot;
+        _playerControlsActions.Action.performed += _charConMove.Action;
         
         _playerControlsActions.Enable();
     }

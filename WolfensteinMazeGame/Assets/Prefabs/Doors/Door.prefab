@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4177497406118671074}
   - component: {fileID: 8043299027633071742}
   - component: {fileID: 6213426453200355113}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DoorGRFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7934531708509534364}
   - component: {fileID: 129457101}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 2800000, guid: f2fd4d7aa99c94a67a6a137fe979a760, type: 3}
@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c51169e32ede2d54cb0f776491f6febf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {x: 0, y: 0, z: -12}
-  _openDoor: 0
-  _openingSpeed: 0.5
+  doorOpen: 0
+  _goalPos: {x: -1, y: 0, z: 0}
+  _startPos: {x: 0, y: 0, z: 0}
+  _openingSpeed: 0.7

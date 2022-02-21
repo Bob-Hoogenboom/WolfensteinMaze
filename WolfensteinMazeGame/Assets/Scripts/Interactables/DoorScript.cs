@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
-    [SerializeField] private bool _actionPerformed = false;
-    
+    public bool doorOpen = false;
+
     [SerializeField] private Vector3 _goalPos;
     [SerializeField] private Vector3 _startPos;
     [SerializeField] private float _openingSpeed = 0.5f;
@@ -20,10 +20,10 @@ public class DoorScript : MonoBehaviour
 
     private void Update()
     {
-        if (_actionPerformed) _target = _target == 0 ? 1 : 0; //if (door got hit by player ray, move to target -> wait [time] -> move back
+        if (doorOpen) _target = _target == 0 ? 1 : 0; //if (door got hit by player ray, move to target -> wait [time] -> move back
         MoveToTarget();
 
-        if (_target >= 0 || _target <= 1) _actionPerformed = false;
+        if (_target >= 0 || _target <= 1) doorOpen = false;
     }
 
     private void MoveToTarget()
