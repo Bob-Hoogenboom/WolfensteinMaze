@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class InputParser : MonoBehaviour
 {
     private PlayerInput _playerInput;
-    private PlayerInput.MovementActions _playerControlsActions;
+    public PlayerInput.MovementActions _playerControlsActions;
 
     [SerializeField] private CharacterControllerMove _charConMove;
     [SerializeField] private Shoot _shoot;
