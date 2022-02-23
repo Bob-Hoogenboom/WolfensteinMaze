@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Finished");
         Invoke(nameof(BackToMenu), _transitionDelay);
-        
     }
 
     public void PlayerDeath()
