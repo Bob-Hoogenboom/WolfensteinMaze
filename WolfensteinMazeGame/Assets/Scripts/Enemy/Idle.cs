@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Enemy
@@ -11,7 +9,8 @@ namespace Enemy
         {
             base.EnterState(); //calls the base implementation thats in the abstract class
             Debug.Log("Entered Idle State");
-            return true;
+            EnteredState = true;
+            return EnteredState;
         }
 
         public override void UpdateState()
