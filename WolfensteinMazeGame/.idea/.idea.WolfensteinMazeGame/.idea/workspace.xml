@@ -2,41 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="755494c5-439a-4b78-9645-b927f355d8c2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Collectibles/Materials/GoldChalice3D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Collectibles/Materials/GoldChalice3D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EndSwitch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EndSwitch.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GoldChalice.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GoldChalice.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WolfensteinMazeGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WolfensteinMazeGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ReturnToCastleWolfenstein.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ReturnToCastleWolfenstein.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactables/End.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactables/End.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/InputParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/InputParser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Basic Tiles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Basic Tiles.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/BasicWall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/BasicWall.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/BlueWall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/BlueWall.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Cell.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Cell.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Door.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Door.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/EndOfLevel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/EndOfLevel.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/LeverOff.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/LeverOff.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/LeverOn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/LeverOn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/StoneEagle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/StoneEagle.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/StoneKanzler.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/StoneKanzler.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/WoodEagle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/WoodEagle.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/WoodKanzler.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/WoodKanzler.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/WoodWall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/WoodWall.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/PlayerInput.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/PlayerInput.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +86,7 @@
       <workItem from="1645167238807" duration="4658000" />
       <workItem from="1645425781341" duration="12172000" />
       <workItem from="1645513969554" duration="11526000" />
+      <workItem from="1645775436083" duration="718000" />
     </task>
     <servers />
   </component>
