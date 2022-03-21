@@ -43763,7 +43763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7542025033658818083, guid: 2e7459c607fb97442b2db03c2281feb0, type: 3}
       propertyPath: _goalPos.x
-      value: -2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7542025033658818083, guid: 2e7459c607fb97442b2db03c2281feb0, type: 3}
       propertyPath: _goalPos.z
