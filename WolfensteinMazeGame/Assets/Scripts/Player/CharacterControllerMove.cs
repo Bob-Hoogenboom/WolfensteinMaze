@@ -18,7 +18,7 @@ public class CharacterControllerMove : MonoBehaviour
     [SerializeField] private DoorScript _doorScript;
     [SerializeField] private Vector3 _boxSize;
     [SerializeField] private LayerMask _door;
-    [SerializeField] private RaycastHit _hit;
+    private RaycastHit _hit;
 
     [Space]
     [SerializeField] private CharacterController _charController;
