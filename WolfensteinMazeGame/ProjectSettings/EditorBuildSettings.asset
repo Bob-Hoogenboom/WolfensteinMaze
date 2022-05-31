@@ -11,4 +11,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/ReturnToCastleWolfenstein.unity
     guid: 98357e28cb7679044b87e41699763e82
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 72c167eb65e2a104fb4a4ecd3fdd74ae, type: 2}

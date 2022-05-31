@@ -1,40 +1,36 @@
-using System;
 using UnityEngine;
-using Utility;
-using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using UnityEngine.PlayerLoop;
+using Utility;
 
 public class PlayerController : MonoBehaviour
 {
-    //PlayerInput Variables
+    public PlayerInput.MovementActions _playerControlsActions;
     private PlayerInput _playerInput;
-    private Vector2 _moveDirection;
-    private InputAction _move;
-    private InputAction _fire;
-
     private CharacterController _charCon;
+    
+    [Header("Movement")]
     [SerializeField] private float _walkSpeed;
+    [SerializeField] private float _runSpeed;
     
     private void Awake()
     {
         _playerInput = new PlayerInput();
+        _playerControlsActions = _playerInput.Movement;
+
+        _playerControlsActions.Fire.performed += Fire;
+        _playerControlsActions.Interact.performed += Interact;
+        
+        _playerControlsActions.Enable();
     }
 
     private void OnEnable()
     {
-        _move = _playerInput.Movement.Move;
-        _move.Enable();
-
-        _fire = _playerInput.Movement.Fire;
-        _fire.Enable();
-        _fire.performed += Fire;
+        _playerControlsActions.Enable();
     }
     
     private void OnDisable()
     {
-        _move.Disable();
-        _fire.Disable();
+        _playerControlsActions.Disable();
     }
 
     private void Start()
@@ -44,26 +40,35 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Move();
+        // Look(_playerControlsActions.MousePosition.ReadValue<Vector2>());
+        Move(_playerControlsActions.Move.ReadValue<Vector2>());
+        LookAt(_playerControlsActions.Look.ReadValue<Vector2>());
     }
 
-    private void Move()
+    private void Move(Vector2 Dir)
     {
-        _moveDirection = _move.ReadValue<Vector2>();
-        
-        if (Vector.IsLengthZero(_moveDirection)) return;
-        // Debug.Log("Walk");
+        if (Vector.IsLengthZero(Dir)) return;
+        Debug.Log("Walk");
     
-        float x = _moveDirection.x;
-        float z = _moveDirection.y;
+        float x = Dir.x;
+        float z = Dir.y;
 
         Vector3 move = transform.right * x + transform.forward * z;
         _charCon.Move(move * _walkSpeed * Time.deltaTime);
-        
+    }
+    
+    private void LookAt(Vector2 LookDir)
+    {
+        Debug.Log("Interact");
     }
 
     private void Fire(InputAction.CallbackContext context)
     {
-        Debug.Log("Pew Pew");
+        Debug.Log("Fire");
+    }
+    
+    private void Interact(InputAction.CallbackContext context)
+    {
+        Debug.Log("Interact");
     }
 }
